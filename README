@@ -1,0 +1,5 @@
+Servlet Backend For SproutCore AddressBook Application
+
+Requires
+	* GSON - For JSON Parsing
+	* ojdbc Library - For Oracle Connectivity
