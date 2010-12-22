@@ -18,8 +18,8 @@ public class ContactDB {
     // <editor-fold defaultstate="collapsed" desc="Database Credentials. Change it according to your database">
     String userName = "senthil";
     String password = "12345678";
-    String url = "jdbc:mysql://localhost:3306/addressbook";
-    String driverClass = "com.mysql.jdbc.Driver";
+    String url = "jdbc:oracle:thin:@10.122.122.208:1521:findb01";
+    String driverClass = "oracle.jdbc.driver.OracleDriver";
     // </editor-fold>
 
     Connection conn;
