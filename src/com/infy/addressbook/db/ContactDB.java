@@ -89,7 +89,7 @@ public class ContactDB {
      * @throws SQLException
      */
     public void createContact(Contact contact) throws SQLException{
-        PreparedStatement stmt = conn.prepareStatement("INSERT INTO contact(firstName, lastName, emailId, mobileNo, age, state, country) VALUES(?, ?, ?, ?, ?, ?, ?)");
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO contact(contactId, firstName, lastName, emailId, mobileNo, age, state, country) VALUES(Seq_AddressBook.nextval, ?, ?, ?, ?, ?, ?, ?)");
         stmt.setString(1, contact.getFirstName());
         stmt.setString(2, contact.getLastName());
         stmt.setString(3, contact.getEmailId());
